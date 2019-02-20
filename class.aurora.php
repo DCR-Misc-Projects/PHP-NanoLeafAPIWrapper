@@ -1,5 +1,5 @@
 <?PHP
-// V1
+// V1.1
 class Aurora {
 	
 	private $config = array();
