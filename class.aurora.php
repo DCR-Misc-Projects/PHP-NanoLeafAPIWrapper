@@ -2,17 +2,17 @@
 // V1
 class Aurora {
 	
-	private $config					= array();
-	private $BASE_URI				= null;
-	private $SOCK_STREAM			= null;
+	private $config = array();
+	private $BASE_URI = null;
+	private $SOCK_STREAM = null;
 	
 	function __construct($ip, $port, $key, $apiversion = "v1") {
-		$this->config['ip'] 		= $ip;
-		$this->config['port'] 		= $port;
-		$this->config['key'] 		= $key;
+		$this->config['ip'] = $ip;
+		$this->config['port'] = $port;
+		$this->config['key'] = $key;
 		$this->config['apiversion'] = $apiversion;
 		
-		$this->BASE_URI					= sprintf("http://%s:%s/api/%s/%s/", $ip, $port, $apiversion, $key);
+		$this->BASE_URI	= sprintf("http://%s:%s/api/%s/%s/", $ip, $port, $apiversion, $key);
 		
 	}
 	
